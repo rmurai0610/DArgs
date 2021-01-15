@@ -5,7 +5,7 @@ This enables user of DArgs to define argument parsing with minimal lines of code
 
 ## Example
 ```
-da::DArgs dargs(argc, argv);
+DArgs::DArgs dargs(argc, argv);
 std::string dataset = dargs("--dataset", "Path to the dataset to load", std::string("dataset/default.txt"));
 int n_iters         = dargs("--n_iters", "Number of iterations", 200);
 double alpha        = dargs("--beta", "beta value", 0.0001f);
