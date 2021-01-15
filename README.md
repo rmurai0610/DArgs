@@ -1,8 +1,6 @@
 # DArgs - Dumb Argument Parser for C++
-DArgs is a minimal, simple argument parser for C++ (Less than 100 lines of C++).
-DArgs reads the given arguments on the fly instead of creating a parse tree.
-This enables user of DArgs to define argument parsing with minimal lines of code.
-
+DArgs is a minimal, simple argument parser for C++.
+DArgs parses the arguments as the options are defined, enabling the user to use DArgs with minimal lines of code.
 ## Example
 ```
 DArgs::DArgs dargs(argc, argv);
