@@ -6,7 +6,7 @@ DArgs parses the arguments as the options are defined, enabling the user to use 
 DArgs::DArgs dargs(argc, argv);
 std::string dataset = dargs("--dataset", "Path to the dataset to load", std::string("dataset/default.txt"));
 int n_iters         = dargs("--n_iters", "Number of iterations", 200);
-double alpha        = dargs("--beta", "beta value", 0.0001f);
+double alpha        = dargs("--alpha", "alpha value", 0.0001f);
 
 if (!dargs.check()) {
     dargs.print_help();
