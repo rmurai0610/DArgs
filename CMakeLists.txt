@@ -21,7 +21,7 @@ install(
 
 install(
   EXPORT ${PROJECT_NAME}Targets
-  NAMESPACE ${PROJECT_NAME_CAPS}::
+  NAMESPACE ${PROJECT_NAME}::
   DESTINATION "${config_install_dir}")
 
 install(
@@ -31,7 +31,7 @@ install(
 
 export(
   TARGETS ${PROJECT_NAME}
-  NAMESPACE ${PROJECT_NAME_CAPS}::
+  NAMESPACE ${PROJECT_NAME}::
   FILE ${PROJECT_NAME}Targets.cmake)
 
 export(PACKAGE ${PROJECT_NAME})
