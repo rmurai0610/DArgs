@@ -11,6 +11,7 @@ include(GNUInstallDirs)
 
 set(config_install_dir "share/${PROJECT_NAME}/cmake")
 set(generated_dir "${CMAKE_CURRENT_BINARY_DIR}/generated")
+string(TOUPPER ${PROJECT_NAME} PROJECT_NAME_CAPS)
 
 # Targets:
 install(
@@ -21,7 +22,7 @@ install(
 
 install(
   EXPORT ${PROJECT_NAME}Targets
-  NAMESPACE ${PROJECT_NAME}::
+  NAMESPACE ${PROJECT_NAME_CAPS}::
   DESTINATION "${config_install_dir}")
 
 install(
@@ -31,7 +32,7 @@ install(
 
 export(
   TARGETS ${PROJECT_NAME}
-  NAMESPACE ${PROJECT_NAME}::
+  NAMESPACE ${PROJECT_NAME_CAPS}::
   FILE ${PROJECT_NAME}Targets.cmake)
 
 export(PACKAGE ${PROJECT_NAME})
